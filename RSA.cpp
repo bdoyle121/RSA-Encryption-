@@ -87,6 +87,11 @@ int main()
     cout << "Enter an integer less than" << PQ << ": ";
     cin >> M;
 
+    while (M >= PQ) {
+        cout << "Error!! you entered a integer greater then 21, please give a new value." << PQ << ":";
+        cin >> M;
+    }
+
     int C = Encode(M, e, PQ);
     int M1 = Decode(C, d, PQ);
 
